@@ -1,12 +1,14 @@
 import React from 'react'
 import { View, TextInput, StyleSheet } from 'react-native'
-const Input = () => (
+const Input = ( { inputValue, inputChange }) => ( // Faz a desestruturação das props `inputValue` e `inputChange`.
     <View style={styles.inputContainer}>
         <TextInput
             style={styles.input}
-            placeholder='What needs to be done?'
+            placeholder='O que preciso fazer ?'
             placeholderTextColor='#CACACA'
-            selectionColor='#666666' />
+            selectionColor='#666666'
+            // configura o metodo onChangeText para inputChange
+            onChangeText={ inputChange } /> 
     </View>
 )
 
