@@ -1,6 +1,6 @@
 # App Todo
 Desenvolvido em React Native
-# Projeto React Native 
+
 
 Este projeto é uma introdução ao desenvolvimento de aplicativos móveis utilizando o React Native. Durante o estudo deste projeto, adquiri conhecimentos essenciais sobre React e React Native, explorando conceitos e técnicas fundamentais para a criação de aplicativos,  componentes nativos, manipulação de estado, e o ciclo de vida do React para criar uma interface interativa e responsiva. Através do uso de props e state, é possível criar uma experiência do usuário dinâmica e envolvente.
 
