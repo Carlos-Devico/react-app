@@ -83,9 +83,3 @@ Siga as etapas abaixo para executar o aplicativo em seu ambiente de desenvolvime
 ## Contribuindo
 
 Se você deseja contribuir para este projeto, fique à vontade para abrir uma issue ou enviar uma pull request.
-
-
-Lembre-se de substituir "seu-usuario" e "nome-do-repositorio" pelos seus próprios detalhes do usuário e do repositório.
-
-
-
