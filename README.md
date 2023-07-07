@@ -1,9 +1,9 @@
-# react-app
-Desenvolvido em React Native, este aplicativo utiliza componentes nativos, manipulação de estado, e o ciclo de vida do React para criar uma interface interativa e responsiva. Através do uso de props e state, é possível criar uma experiência do usuário dinâmica e envolvente.
+# App Todo
+Desenvolvido em React Native
+# Projeto React Native 
 
-# Projeto React Native - Descrição
+Este projeto é uma introdução ao desenvolvimento de aplicativos móveis utilizando o React Native. Durante o estudo deste projeto, adquiri conhecimentos essenciais sobre React e React Native, explorando conceitos e técnicas fundamentais para a criação de aplicativos,  componentes nativos, manipulação de estado, e o ciclo de vida do React para criar uma interface interativa e responsiva. Através do uso de props e state, é possível criar uma experiência do usuário dinâmica e envolvente.
 
-Este projeto é uma introdução ao desenvolvimento de aplicativos móveis utilizando o React Native. Durante o estudo deste projeto, adquiri conhecimentos essenciais sobre React e React Native, explorando conceitos e técnicas fundamentais para a criação de aplicativos.
 
 ## Tópicos Abordados
 
@@ -12,7 +12,7 @@ Este projeto é uma introdução ao desenvolvimento de aplicativos móveis utili
 - **Pontos fortes do React Native**: Reconheci as vantagens do React Native, incluindo a disponibilidade de desenvolvedores, produtividade, performance, fluxo unidirecional de dados, experiência do desenvolvedor, transpilação, comunidade ativa e atualizações rápidas.
 - **Limitações do React Native**: Compreendi as limitações do React Native e as situações em que outras soluções para construção de aplicativos móveis multiplataforma podem ser mais adequadas.
 - **Criação e uso de componentes básicos**: Aprendi como criar e utilizar componentes básicos no React Native, incluindo uma visão geral dos componentes nativos, composição de componentes, exportação de componentes e combinação de componentes.
-- **Criação de um projeto inicial**: Explorei duas opções para a criação de projetos React Native: Create React Native App CLI e React Native CLI.
+
 
 ## Aprendizado Adicional
 
@@ -22,5 +22,70 @@ Este projeto forneceu uma base sólida para continuar explorando o desenvolvimen
 
 Sinta-se à vontade para explorar o código-fonte deste projeto e continuar expandindo seus conhecimentos em React Native.
 
-**Observação:** Este projeto foi desenvolvido como parte de um estudo e não está diretamente relacionado ao livro "React Native in Action".
+
+```markdown
+
+
+Este é um aplicativo de lista de tarefas simples desenvolvido com React Native e Expo.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter o ambiente de desenvolvimento do Expo configurado corretamente em sua máquina. Se você ainda não tem o Expo instalado, você pode seguir as instruções de instalação na [documentação oficial do Expo](https://docs.expo.dev/get-started/installation/).
+
+## Executando o aplicativo
+
+Siga as etapas abaixo para executar o aplicativo em seu ambiente de desenvolvimento:
+
+1. Clone este repositório para o seu ambiente local:
+
+   ```shell
+   git clone https://github.com/Carlos-Devico/react-app.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```shell
+   cd nome-do-repositorio
+   ```
+
+3. Instale as dependências do projeto:
+
+   ```shell
+   npm install
+   ```
+
+   ou
+
+   ```shell
+   yarn install
+   ```
+
+4. Inicie o aplicativo Expo:
+
+   ```shell
+   npm start
+   ```
+
+   ou
+
+   ```shell
+   yarn start
+   ```
+
+5. Aguarde até que o Expo Metro Bundler seja iniciado. Isso abrirá uma nova janela do navegador com o painel de controle do Expo.
+
+6. Certifique-se de ter o aplicativo Expo Go instalado em seu dispositivo móvel. Você pode encontrar o aplicativo Expo Go na [App Store](https://apps.apple.com/us/app/expo-go/id982107779) (iOS) ou [Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en&gl=US) (Android).
+
+7. No painel de controle do Expo Metro Bundler, você verá um QR code. Abra o aplicativo Expo Go em seu dispositivo móvel e escaneie o QR code. Isso carregará e executará o aplicativo no seu dispositivo.
+
+8. Parabéns! Agora você pode usar o aplicativo de lista de tarefas e começar a adicionar suas próprias tarefas.
+
+## Contribuindo
+
+Se você deseja contribuir para este projeto, fique à vontade para abrir uma issue ou enviar uma pull request.
+
+
+Lembre-se de substituir "seu-usuario" e "nome-do-repositorio" pelos seus próprios detalhes do usuário e do repositório.
+
+
 
