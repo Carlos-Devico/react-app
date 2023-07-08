@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { View, ScrollView, StyleSheet } from 'react-native'
-import Heading from './components/Heading'
+import Heading from './src/Heading'
 import Input from './components/Input'
 import Button from './components/Button'
+import Todo from './src/Todo'
 
 let todoIndex = 0
 
@@ -36,11 +37,11 @@ class App extends Component {
         todoIndex++ //incrementa o todoIndex
         const todos = [...this.state.todos, todo] // Adiciona a nova tarefa ao array existente de tarefas (todos).
         this.setState({ todos, inputValue: ''}, () => { // Define o estado dos todos para corresponder
-                                                       // ao array atualizado this.state.todos e redefine o inputValue para uma string vazia.
+                                                        // ao array atualizado this.state.todos e redefine o inputValue para uma string vazia.
 
-            console.log('Estado: ', this.state); // Uma vez que o estado é definido, você tem a opção de passar 
+            console.log('Estado: ', this.state); // uma vez que o estado é definido, você tem a opção de passar 
                                                  // uma função de retorno (callback). Neste caso, uma função de 
-                                                 //retorno de setState registra o estado para garantir que tudo esteja funcionando corretamente.
+                                                 // retorno de setState registra o estado para garantir que tudo esteja funcionando corretamente.
         })
     }
     render() {
@@ -54,6 +55,7 @@ class App extends Component {
                         inputValue = { inputValue }
                         inputChange = { (text) => this.inputChange(text) } // Passa inputChange como uma propriedade para o componente Input
                     />
+                    
                     <Button submitTodo={this.submitTodo} />
                     
                 </ScrollView>
