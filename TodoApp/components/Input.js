@@ -1,31 +1,44 @@
-import React from 'react'
-import { View, TextInput, StyleSheet } from 'react-native'
-const Input = ( { inputValue, inputChange }) => ( // Faz a desestruturação das props `inputValue` e `inputChange`.
-    <View style={styles.inputContainer}>
+import React, { useRef } from 'react';
+import { TextInput, StyleSheet } from 'react-native';
+
+const Input = ({ inputValue, inputChange }) => {
+    const inputRef = useRef(null);
+
+    const handleInputChange = (text) => {
+        inputChange(text);
+    };
+
+    const handleSubmitEditing = () => {
+        // Limpar o campo de entrada
+        inputRef.current.clear();
+        // Dar foco novamente ao campo de entrada
+        inputRef.current.focus();
+    };
+
+    return (
         <TextInput
+            ref={inputRef}
+            value={inputValue}
+            onChangeText={handleInputChange}
+            onSubmitEditing={handleSubmitEditing}
+            placeholder="Digite uma tarefa..."
             style={styles.input}
-            placeholder='O que preciso fazer ?'
-            placeholderTextColor='#CACACA'
-            selectionColor='#666666'
-            // configura o metodo onChangeText para inputChange
-            onChangeText={ inputChange } /> 
-    </View>
-)
+        />
+    );
+};
 
 const styles = StyleSheet.create({
-    inputContainer: {
-        marginLeft: 20,
-        marginRight: 20,
-        shadowOpacity: 0.2,
-        shadowRadius: 3,
-        shadowColor: '#000000',
-        shadowOffset: { width: 2, height: 2 }
-    },
     input: {
         height: 60,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#c9e41a',
         paddingLeft: 10,
-        paddingRight: 10
-    }
-})
-export default Input
+        paddingRight: 10,
+        marginLeft: 20,
+        marginRight: 20,
+        marginBottom: 5,
+        marginTop: 5,
+        fontWeight: '900'
+    },
+});
+
+export default Input;

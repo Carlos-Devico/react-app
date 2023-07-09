@@ -1,21 +1,32 @@
-import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-const Heading = () => (
-    <View style={styles.header}>
-        <Text style={styles.headerText}>
-            todos
-        </Text>
+import React from 'react';
+import { View, Image, Text, StyleSheet } from 'react-native';
+
+const Heading = () => {
+  return (
+    <View style={styles.container}>
+      <Image
+        source={require('../assets/icone.png')}
+        style={styles.image}
+      />
     </View>
-)
+  );
+};
+
 const styles = StyleSheet.create({
-    header: {
-        marginTop: 80
-    },
-    headerText: {
-        textAlign: 'center',
-        fontSize: 72,
-        color: 'rgba(175, 47, 47, 0.25)',
-        fontWeight: '100'
-    }
-})
-export default Heading
+  container: {
+    flexDirection: 'row',
+    backgroundColor: '#c9e41a',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingVertical: 10,
+    marginRight: 20,
+    marginLeft: 20
+  },
+  image: {
+    width: 60,
+    height: 60,
+    alignContent: 'center'
+  }
+});
+
+export default Heading;
