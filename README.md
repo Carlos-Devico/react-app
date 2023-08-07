@@ -44,13 +44,13 @@ Siga as etapas abaixo para executar o aplicativo em seu ambiente de desenvolvime
 
 2. Navegue até o diretório do projeto:
 
-   ```shell
+   ```
    cd nome-do-repositorio
    ```
 
 3. Instale as dependências do projeto:
 
-   ```shell
+   ```
    npm install
    ```
 
@@ -62,13 +62,13 @@ Siga as etapas abaixo para executar o aplicativo em seu ambiente de desenvolvime
 
 4. Inicie o aplicativo Expo:
 
-   ```shell
+   ```
    npm start
    ```
 
    ou
 
-   ```shell
+   ```
    yarn start
    ```
 
