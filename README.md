@@ -38,7 +38,7 @@ Siga as etapas abaixo para executar o aplicativo em seu ambiente de desenvolvime
 
 1. Clone este repositório para o seu ambiente local:
 
-   ```shell
+   ```
    git clone https://github.com/Carlos-Devico/react-app.git
    ```
 
